@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css"/>
+
+    <style type="text/css">
+        .es-login-title {
+            height: auto;
+            color: #282828;
+            letter-spacing: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            line-height: 1.5;
+            font-size: 42pt;
+            text-shadow: rgba(34, 37, 41, 0.2) 3px 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row justify-content-center mt-5 mb-3">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class=" es-login-title">
+                    E-Store
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="card mt-2 w-100  custom-border-top-dark">
+                    <div class="card-header text-center">
+                        Administrator Login
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="frmUsername">Username</label>
+                                <input id="frmUsername" name="username" class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="frmPassword">Password</label>
+                                <input id="frmPassword" name="password" class="form-control" type="password">
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="frmRemember">
+                                        <label class="form-check-label ms-1" for="frmRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <a class="btn btn-primary w-100" href="dashboard.html" role="button">Login</a> <!-- change to button -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body text-center">
+            Kalas MIS 2022 LLC
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

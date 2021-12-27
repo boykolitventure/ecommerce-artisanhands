@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css"/>
+
+
+    <!-- CUSTOM CSS ARI -->
+    <link href="../assets/custom/css/dashboard.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Kalas MIS 2022 LLC </a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav">
+        <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="../login.html">Sign out</a>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block p-3 text-white bg-light sidebar collapse">
+            <div class="position-sticky pt-5">
+                <ul class="nav-item list-unstyled ps-0 ul-custom">
+                    <li class="mb-1">
+                        <a class="btn btn-toggle align-items-center rounded nav-link" role="button" href="../dashboard.html">
+                            <span data-feather="home" class="me-2"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#products-collapse" aria-expanded="true">
+                            <span data-feather="package" class="me-2"></span>
+                            Products
+                        </button>
+                        <div class="collapse show" id="products-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="new.html" class="link-dark rounded nav-link active">New</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">List</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Category</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Group</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                            <span data-feather="shopping-cart" class="me-2"></span>
+                            Orders
+                        </button>
+                        <div class="collapse" id="orders-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded nav-link">List</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Processed</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Shipped</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Returned</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#promos-collapse" aria-expanded="false">
+                            <span data-feather="tag" class="me-2"></span>
+                            PROMO
+                        </button>
+                        <div class="collapse" id="promos-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded nav-link">Promo</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Vouchers</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Discounts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <a class="btn btn-toggle align-items-center rounded nav-link" role="button" href="#">
+                            <span data-feather="file" class="me-2"></span>
+                            Invoice
+                        </a>
+                    </li>
+
+                    <!-- new Group-->
+                    <li class="border-top my-3"></li>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-muted">
+                        <span>System Settings</span>
+                    </h6>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#systemset-collapse" aria-expanded="false">
+                            <span data-feather="user" class="me-2"></span>
+                            Configurations
+                        </button>
+                        <div class="collapse" id="systemset-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded nav-link">Accounts</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Roles & Permissions</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Administration</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- New Group -->
+                    <li class="border-top my-3"></li>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-muted">
+                        <span>Personalization</span>
+                    </h6>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            <span data-feather="user" class="me-2"></span>
+                            Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded nav-link">Profile</a></li>
+                                <li><a href="#" class="link-dark rounded nav-link">Settings</a></li>
+                                <li><a href="login.html" class="link-dark rounded nav-link">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Products</h1>
+            </div>
+
+            <h2>New</h2>
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-7 col-md-9 col-sm-12">
+                    <div class="card mt-2 w-100  custom-border-top-dark">
+                        <div class="card-body">
+                            <form class="row">
+                                <h5>Categorized</h5>
+                                <hr>
+                                <div class="form-group col-6">
+                                    <label for="group">Description</label>
+                                    <select class="form-control" id="group" name="category">
+                                        <option value="NULL" selected>Choose...</option>
+                                        <option value="1">Group 1</option>
+                                        <option value="2">Group 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="category">Category</label>
+                                    <select class="form-control" id="category" name="category">
+                                        <option value="NULL" selected>Choose...</option>
+                                        <option value="1">Category A</option>
+                                        <option value="2">Category B</option>
+                                    </select>
+                                </div>
+
+                                <h5 class="mt-5">Details</h5>
+                                <hr>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="code">Item Code</label>
+                                        <input id="code" name="code" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="sku">SKU</label>
+                                        <input id="sku" name="sku" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="ucp">UCP</label>
+                                        <input id="ucp" name="code" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input id="name" name="name" class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea id="description" name="description" class="form-control" type="text" rows="5"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body text-center">
+            Kalas MIS 2022 LLC
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../assets/icons/feather-icons/dist/feather.js"></script>
+
+<!-- Cusrom JS ari-->
+<script type="text/javascript" src="../assets/custom/js/dashboard.js"></script>
+</body>
+</html>
